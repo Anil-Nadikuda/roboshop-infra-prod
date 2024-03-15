@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "daws14-state-dev"
+    bucket         = "daws14-state-prod"
     key            = "vpn"
     region         = "us-east-1"
-    dynamodb_table = "daws14-locking-dev"
+    dynamodb_table = "daws14-locking-prod"
   }
 }
 
